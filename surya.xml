@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="surya"
+           fetch="https://github.com/aosp-surya"
+           revision="12" />
+
+  <project path="manifest" name="manifest" remote="surya" />
+
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/modules/StatsD" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/system/bt" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/vold" />
+
+  <project path="art" name="art" remote="surya" />
+  <project path="bionic" name="bionic" remote="surya" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="surya" />
+  <project path="build/make" name="build_make" remote="surya" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="surya" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/qcom/common" name="device_qcom_common" remote="surya" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="surya" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="surya" />
+  <project path="device/xiaomi/J20C-sepolicy" name="device_xiaomi_J20C-sepolicy" remote="surya" />
+  <project path="device/xiaomi/surya" name="device_xiaomi_surya" remote="surya" />
+  <project path="external/ant-wireless/ant_client" name="external_ant-wireless_ant_client" remote="surya" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="surya" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="surya" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="surya" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="surya" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="surya" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="surya" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="surya" />
+  <project path="external/json-c" name="external_json-c" remote="surya" />
+  <project path="external/selinux" name="external_selinux" remote="surya" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="surya" />
+  <project path="frameworks/av" name="frameworks_av" remote="surya" />
+  <project path="frameworks/base" name="frameworks_base" remote="surya" />
+  <project path="frameworks/native" name="frameworks_native" remote="surya" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="surya" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="surya" />
+  <project path="hardware/qcom/thermal" name="hardware_qcom_thermal" remote="surya" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="surya" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="surya" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="surya" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="surya" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="surya" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="surya" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="surya" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="surya" />
+  <project path="system/bt" name="system_bt" remote="surya" />
+  <project path="system/core" name="system_core" remote="surya" />
+  <project path="system/vold" name="system_vold" remote="surya" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="surya" />
+  <project path="vendor/google-pixel" name="vendor_google-pixel" remote="surya" />
+  <project path="vendor/qcom/common" name="vendor_qcom_common" remote="surya" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="surya" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="surya" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="surya" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="surya" />
+  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom_opensource_core-utils" remote="surya" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="surya" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="surya" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="surya" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="surya" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="surya" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="surya" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="surya" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" remote="surya" />
+  <project path="vendor/xiaomi/surya" name="vendor_xiaomi_surya" remote="surya" />
+
+</manifest>
