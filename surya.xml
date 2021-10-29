@@ -5,6 +5,9 @@
            fetch="https://github.com/aosp-surya"
            revision="12" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
   <project path="manifest" name="manifest" remote="surya" />
 
   <remove-project name="platform/art" />
@@ -16,9 +19,12 @@
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
@@ -26,11 +32,15 @@
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/StatsD" />
   <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/iorap" />
+  <remove-project name="platform/system/security" />
+  <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
 
   <project path="art" name="art" remote="surya" />
@@ -65,9 +75,12 @@
   <project path="external/json-c" name="external_json-c" remote="surya" />
   <project path="external/selinux" name="external_selinux" remote="surya" />
   <project path="external/tinycompress" name="external_tinycompress" remote="surya" />
+  <project path="external/zlib-ng" name="external_zlib-ng" remote="surya" />
   <project path="frameworks/av" name="frameworks_av" remote="surya" />
   <project path="frameworks/base" name="frameworks_base" remote="surya" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="surya" />
   <project path="frameworks/native" name="frameworks_native" remote="surya" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="surya" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="surya" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="surya" />
   <project path="hardware/qcom/thermal" name="hardware_qcom_thermal" remote="surya" />
@@ -75,21 +88,28 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="surya" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="surya" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="surya" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="surya" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="surya" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="surya" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="surya" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="surya" />
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="surya" />
   <project path="system/bt" name="system_bt" remote="surya" />
   <project path="system/core" name="system_core" remote="surya" />
+  <project path="system/iorap" name="system_iorap" remote="surya" />
+  <project path="system/security" name="system_security" remote="surya" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="surya" />
   <project path="system/vold" name="system_vold" remote="surya" />
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="surya" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="surya" />
+  <project path="vendor/google/gms" name="ghostrider-reborn/android_vendor_google_gms" remote="gitlab" revision="12" />
   <project path="vendor/google-pixel" name="vendor_google-pixel" remote="surya" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="surya" />
   <project path="vendor/qcom/common" name="vendor_qcom_common" remote="surya" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="surya" />
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="surya" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="surya" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="surya" />
-  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom_opensource_core-utils" remote="surya" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="surya" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="surya" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="surya" />
