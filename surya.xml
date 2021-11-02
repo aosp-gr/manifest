@@ -15,6 +15,7 @@
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/external/selinux" />
@@ -69,6 +70,7 @@
   <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="surya" />
   <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="surya" />
   <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="surya" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="surya" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="surya" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="surya" />
   <project path="external/fastrpc" name="external_fastrpc" remote="surya" />
