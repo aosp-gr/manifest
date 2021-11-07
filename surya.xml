@@ -35,6 +35,7 @@
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/StatsD" />
   <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
@@ -91,6 +92,7 @@
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="surya" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="surya" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="surya" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="surya" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="surya" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="surya" />
   <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="surya" />
