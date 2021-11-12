@@ -31,6 +31,7 @@
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/StatsD" />
@@ -87,6 +88,7 @@
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="surya" />
   <project path="hardware/qcom/thermal" name="hardware_qcom_thermal" remote="surya" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="surya" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="surya" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="surya" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="surya" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="surya" />
@@ -105,8 +107,8 @@
   <project path="tools/extract-utils" name="tools_extract-utils" remote="surya" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="surya" />
   <project path="vendor/google/gms" name="ghostrider-reborn/android_vendor_google_gms" remote="gitlab" revision="12" />
-  <project path="vendor/google-pixel" name="vendor_google-pixel" remote="surya" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="surya" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="surya" />
+  <project path="vendor/gprivate" name="vendor_gprivate" remote="surya" />
   <project path="vendor/qcom/common" name="vendor_qcom_common" remote="surya" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="surya" />
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="surya" />
