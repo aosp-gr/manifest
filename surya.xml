@@ -41,6 +41,7 @@
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/iorap" />
+  <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
@@ -101,6 +102,7 @@
   <project path="system/bt" name="system_bt" remote="surya" />
   <project path="system/core" name="system_core" remote="surya" />
   <project path="system/iorap" name="system_iorap" remote="surya" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="surya" />
   <project path="system/security" name="system_security" remote="surya" />
   <project path="system/sepolicy" name="system_sepolicy" remote="surya" />
   <project path="system/vold" name="system_vold" remote="surya" />
