@@ -5,6 +5,9 @@
            fetch="https://github.com/aosp-gr"
            revision="13" />
 
+  <remote  name="github"
+           fetch="https://github.com/" />
+
   <project path="manifest" name="manifest" remote="gr" />
 
   <remove-project name="platform/art" />
@@ -61,6 +64,7 @@
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="gr" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="gr" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="gr" />
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="gr" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="gr" />
   <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="gr" />
