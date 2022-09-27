@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="gr"
+           fetch="https://github.com/aosp-gr"
+           revision="13" />
+
+  <project path="manifest" name="manifest" remote="gr" />
+
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/libhidl" />
+  <remove-project name="platform/system/logging" />
+
+  <project path="art" name="art" remote="gr" />
+  <project path="bionic" name="bionic" remote="gr" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="gr" />
+  <project path="build/make" name="build_make" remote="gr" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="gr" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/qcom/common" name="device_qcom_common" remote="gr" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="gr" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="gr" />
+  <project path="external/Camera" name="external_Camera" remote="gr" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="gr" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="gr" />
+  <project path="external/json-c" name="external_json-c" remote="gr" />
+  <project path="external/selinux" name="external_selinux" remote="gr" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="gr" />
+  <project path="frameworks/av" name="frameworks_av" remote="gr" />
+  <project path="frameworks/base" name="frameworks_base" remote="gr" />
+  <project path="frameworks/native" name="frameworks_native" remote="gr" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="gr" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="gr" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="gr" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="gr" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="gr" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="gr" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="gr" />
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="gr" />
+  <project path="system/core" name="system_core" remote="gr" />
+  <project path="system/libhidl" name="system_libhidl" remote="gr" />
+  <project path="system/logging" name="system_logging" remote="gr" />
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="gr" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="gr" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="gr" />
+  <project path="vendor/qcom/common" name="vendor_qcom_common" remote="gr" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="gr" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="gr" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="gr" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="vendor_qcom_opensource_commonsys_audio" remote="gr" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="gr" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="vendor_qcom_opensource_commonsys_dpm" remote="gr" />
+  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom_opensource_core-utils" remote="gr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="gr" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="gr" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="gr" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="gr" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="gr" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="gr" />
+
+</manifest>
