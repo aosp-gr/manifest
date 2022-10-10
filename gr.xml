@@ -15,9 +15,14 @@
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -31,6 +36,8 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libhidl" />
   <remove-project name="platform/system/logging" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/vold" />
 
   <project path="art" name="art" remote="gr" />
   <project path="bionic" name="bionic" remote="gr" />
@@ -52,10 +59,15 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="gr" />
   <project path="external/Camera" name="external_Camera" remote="gr" />
   <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="gr" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="gr" />
   <project path="external/fastrpc" name="external_fastrpc" remote="gr" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="gr" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="gr" />
   <project path="external/json-c" name="external_json-c" remote="gr" />
   <project path="external/selinux" name="external_selinux" remote="gr" />
+  <project path="external/sqlite" name="external_sqlite" remote="gr" />
   <project path="external/tinycompress" name="external_tinycompress" remote="gr" />
+  <project path="external/zlib" name="external_zlib" remote="gr" />
   <project path="frameworks/av" name="frameworks_av" remote="gr" />
   <project path="frameworks/base" name="frameworks_base" remote="gr" />
   <project path="frameworks/native" name="frameworks_native" remote="gr" />
@@ -71,6 +83,8 @@
   <project path="system/core" name="system_core" remote="gr" />
   <project path="system/libhidl" name="system_libhidl" remote="gr" />
   <project path="system/logging" name="system_logging" remote="gr" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="gr" />
+  <project path="system/vold" name="system_vold" remote="gr" />
   <project path="tools/extract-utils" name="tools_extract-utils" remote="gr" />
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="gr" />
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="gr" />
