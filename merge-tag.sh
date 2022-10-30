@@ -17,7 +17,9 @@ BRANCH="13"
 BLACKLIST="hardware/qcom/display \
 hardware/qcom/gps \
 hardware/qcom/media \
-hardware/qcom/wlan"
+hardware/qcom/wlan \
+external/libjpeg-turbo \
+external/zlib"
 
 # verify tag
 if [ -z "$1" ]; then
